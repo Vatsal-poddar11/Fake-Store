@@ -39,7 +39,7 @@ cd product-management-api
 mvn spring-boot:run
 ```
 
-The application will be available at: **http://localhost:8080**
+The application will be available at: **http://localhost:8081**
 
 ---
 
@@ -50,11 +50,11 @@ docker build -t product-management-api .
 ```
 #### **Step 2: Run the Container**
 ```sh
-docker run -p 8080:8080 product-management-api
+docker run -p 8081:8081 product-management-api
 ```
 #### **Step 3: Access the API**
-- **Get all products:** `GET http://localhost:8080/api/products`
-- **Add a product:** `POST http://localhost:8080/api/products`
+- **Get all products:** `GET http://localhost:8081/api/products`
+- **Add a product:** `POST http://localhost:8081/api/products`
 
 ---
 
@@ -87,8 +87,8 @@ Access the application via the URL provided.
 ## 📜 API Endpoints
 | Method | Endpoint | Description |
 |--------|---------|-------------|
-| GET | `/api/products` | Retrieve all products |
-| POST | `/api/products` | Add a new product |
+| GET | `/api/products/allProducts` | Retrieve all products |
+| POST | `/api/products/addProduct` | Add a new product |
 
 ---
 
